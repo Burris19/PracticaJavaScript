@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Curso Jquery: Funciones</title>
+</head>
+<body>
+	<script type="text/javascript">
+		/*
+		function factorial(numero)
+		{
+			var factorial = 1; 
+			for (numero ; numero > 0 ; numero-- )
+				factorial = factorial * numero;	
+			return factorial;			
+		}
+		var resultado = factorial(3);
+		alert(resultado);
+		alert(factorial(4));
+		*/
+		/*
+		var factorial = function (numero)  {
+			var factorial = 1;
+			for ( numero ; numero > 0 ; numero-- )
+				factorial = factorial * numero;
+			alert(factorial);
+		}
+
+		factorial(5);
+		*/
+		/*
+		(function myFunction(){
+			console.log('Hello World Automatic');
+		})();
+		*/
+		/*
+		(
+			function(){
+				console.log('prueba dos');
+			}
+		)();
+		*/
+		/*
+		(
+			function( parametro1, parametro2 ){
+				console.log(parametro1);
+			}
+		)('Hello Word');
+		*/
+		/*
+		var myApp = (function(){
+		  var foo = 'Hello World';
+		  return{
+		    foo : foo
+		  }
+		})();
+		 
+		console.log( myApp.foo ); 
+		*/
+
+		var imagesCollection = document.getElementsByTagName( 'img' );
+		for( var i = 0, l = imagesCollection.length; i < l; i++ ){
+		  imagesCollection[ i ].addEventListener( 'mouseover', function(e){
+		    e.preventDefault();
+		    console.log( 'Image number: ', i );
+		  }, 'false' );
+		}
+
+
+
+	</script>
+</body>
+</html>
