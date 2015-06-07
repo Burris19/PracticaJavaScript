@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>Primeros pasos en jQuery</title>
+</head>
+<body>
+	<div id="prueba">
+		
+	</div>
+	<div class="prueba">
+		
+	</div>
+
+<script src = "jquery-1.11.3.min.js"></script>
+<script >
+/*
+	$(document).ready(function (){
+	});
+
+	$(document).on('ready',function () {
+	});
+*/
+	//esta es la mejor funcion
+	$(function () {
+		$('#prueba').text('<p>Hola Mundo</p>');
+		$('.prueba').html('<strong>Estoy Usando jQuery</strong>')
+	});
+
+</script>
+</body>
+</html>

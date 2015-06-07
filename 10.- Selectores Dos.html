@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>Selectores en jQuery</title>
+</head>
+<body>
+	<div class="ejem1">
+		<p></p>
+	</div>
+
+	<dib class="ejem1">
+		<span></span>
+	</dib>
+
+	<ul>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+	</ul>
+<script src = "jquery-1.11.3.min.js"></script>
+<script >
+	var seleccion ;
+	$(function () {
+		seleccion = $('.ejem1');
+
+		if(seleccion.length)
+			console.log('Existen: ' + seleccion.length);
+		else
+			console.log('No existe el elemento seleccionado');
+
+
+		//seleccion.not('.cl1').text('Este elemento no tiene la clase cl1');
+		//seleccion.has('p').text('Este elemento tiene un <p> en su contenido');
+		$('li').first().html('<strong>Soy el elemento 1</strong>');
+		$('li').eq(2).text('soy el elemento número 3');
+
+	});
+</script>
+</body>
+</html>

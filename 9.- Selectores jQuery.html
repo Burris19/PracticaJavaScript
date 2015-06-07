@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>Selectores en jQuery</title>
+</head>
+<body>
+
+	<div class="miDiv">
+		<article>
+			<p id = "parrafoUno">Hola jQuery</p>
+		</article>
+	</div>
+
+	<div>
+		<article class = 'miDiv'>
+			<p id = "parafoDos">Y el curso de codigoFacilito</p>
+		</article>
+	</div>
+	<span></span>
+
+<script src = "jquery-1.11.3.min.js"></script>
+<script >
+	$(function () {
+	
+	/*	$('div.miDiv').css({
+			'background-color' : '#000',
+		});
+		$('div.miDiv article p').text("Hola selectores avanzados");
+	*/
+	$('#parrafoUno, #parafoDos, span').text("Hey somos iguales")
+	});
+</script>
+</body>
+</html>
