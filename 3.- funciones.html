@@ -6,68 +6,32 @@
 </head>
 <body>
 	<script type="text/javascript">
-		/*
-		function factorial(numero)
+/*
+		function factorial(num)
 		{
-			var factorial = 1; 
-			for (numero ; numero > 0 ; numero-- )
-				factorial = factorial * numero;	
-			return factorial;			
+			var fac = 1;
+			for (num; num > 0; num-- ) 
+				fac = fac * num;
+			return fac;
 		}
+
 		var resultado = factorial(3);
-		alert(resultado);
-		alert(factorial(4));
-		*/
-		/*
-		var factorial = function (numero)  {
-			var factorial = 1;
-			for ( numero ; numero > 0 ; numero-- )
-				factorial = factorial * numero;
-			alert(factorial);
+		console.log(resultado);
+		alert(factorial(3));
+*/
+		var factorial = function(num) {
+			var fac = 1;
+			for (num; num > 0; num-- ) 
+				fac = fac * num;
+			alert(fac);
 		}
+/*
+		var procesador = {}
+		procesador.prototype.factorial = factorial
 
 		factorial(5);
-		*/
-		/*
-		(function myFunction(){
-			console.log('Hello World Automatic');
-		})();
-		*/
-		/*
-		(
-			function(){
-				console.log('prueba dos');
-			}
-		)();
-		*/
-		/*
-		(
-			function( parametro1, parametro2 ){
-				console.log(parametro1);
-			}
-		)('Hello Word');
-		*/
-		/*
-		var myApp = (function(){
-		  var foo = 'Hello World';
-		  return{
-		    foo : foo
-		  }
-		})();
-		 
-		console.log( myApp.foo ); 
-		*/
-
-		var imagesCollection = document.getElementsByTagName( 'img' );
-		for( var i = 0, l = imagesCollection.length; i < l; i++ ){
-		  imagesCollection[ i ].addEventListener( 'mouseover', function(e){
-		    e.preventDefault();
-		    console.log( 'Image number: ', i );
-		  }, 'false' );
-		}
-
-
-
+		$.each(array, funcion_recorre_array)
+*/
 	</script>
 </body>
 </html>
