@@ -5,27 +5,27 @@
 	<title>Primeros pasos en jQuery</title>
 </head>
 <body>
-	<div id="prueba">
-		
-	</div>
-	<div class="prueba">
-		
-	</div>
+	<div id="prueba"></div>
+	<div class="prueba"></div>
+
 
 <script src = "jquery-1.11.3.min.js"></script>
 <script >
-/*
-	$(document).ready(function (){
+	/*
+	 $(document).ready(function(){
+	 console.log("El documento esta listo");
+	 });
+
+	 $(document).on('ready',function(){
+	 console.log("El documento esta listo");
+	 }); */
+
+	$(function(){
+		$('#prueba').text('<p>Hola Munda</p>');
+
+		$('.prueba').html('<strong>Estoy usando jQuery<strong>');
 	});
 
-	$(document).on('ready',function () {
-	});
-*/
-	//esta es la mejor funcion
-	$(function () {
-		$('#prueba').text('<p>Hola Mundo</p>');
-		$('.prueba').html('<strong>Estoy Usando jQuery</strong>')
-	});
 
 </script>
 </body>

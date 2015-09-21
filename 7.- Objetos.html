@@ -6,21 +6,25 @@
 </head>
 <body>
 	<script type="text/javascript">
+
 		var Gato = new gato("bola de pelos");
-		var GatoDos = new gato("minino");
-		
+		var Gato2 = new gato("Minino");
+
 		function gato(nombre)
 		{
 			this.nombre = nombre;
-			this.maulla = function(){ 
-				alert(this.nombre + " miauuuu");
-			};
+			this.maulla = function () {
+				alert("miawwww");
+			}
+
 		}
 
-		alert("El gato se llama " + Gato.nombre);
-		alert("El segundo gato se llama " + GatoDos.nombre);
 
+/*
+		alert("El gato se llama " + Gato.nombre);
+		alert("El segundo gato se llama " + Gato2.nombre);*/
 		Gato.maulla();
+
 	</script>
 </body>
 </html>

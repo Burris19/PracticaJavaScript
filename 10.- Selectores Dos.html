@@ -21,20 +21,21 @@
 	</ul>
 <script src = "jquery-1.11.3.min.js"></script>
 <script >
-	var seleccion ;
+	var seleccion;
 	$(function () {
-		seleccion = $('.ejem1');
+		var seleccion = $('.ejem1');
 
 		if(seleccion.length)
-			console.log('Existen: ' + seleccion.length);
+			console.log("Existen: " + seleccion.length + " elementos");
 		else
-			console.log('No existe el elemento seleccionado');
+			console.log("No existen ningun elemento")
 
 
 		//seleccion.not('.cl1').text('Este elemento no tiene la clase cl1');
-		//seleccion.has('p').text('Este elemento tiene un <p> en su contenido');
-		$('li').first().html('<strong>Soy el elemento 1</strong>');
-		$('li').eq(2).text('soy el elemento número 3');
+		//seleccion.has('p').text('Exte elemento tiene <p> en su contenido');
+		$('li').first().html('<strong>Soy el elmento 1</strong>');
+		$('li').eq(2).text('Soy el elemento numero 3');
+
 
 	});
 </script>
