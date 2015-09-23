@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        body,html
+        {
+            background: #000;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+
+        header
+        {
+            display: block;
+            margin: 0 auto 50px auto;
+            width: 365px;
+        }
+        ol
+        {
+            display: block;
+            width: 500px;
+            margin: 0 auto;
+        }
+
+        ol li
+        {
+            background: #088a29;
+            margin: 5px auto;
+            height: 30px;
+            width: 100%;
+        }
+        button
+        {
+            display: block;
+            margin: 0 auto;
+            width: 80px;
+        }
+        div
+        {
+            background: #fe2e64;
+            height: 50px;
+            display: block;
+            width: 400px;
+            margin: 2px auto;
+
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <img src="codigofacilito.png" alt="CF"/>
+    </header>
+
+    <ol>
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+    </ol>
+
+    <button id="test">Ejecutar</button>
+
+    <div id="e1">
+        <p>Div 1</p>
+    </div>
+
+    <div id="e2">
+        <p>Div 2</p>
+    </div>
+
+
+<script src="jquery-1.11.3.min.js"></script>
+<script>
+    $(function () {
+        $('button').on('click',function(){
+            //$('ol li:first').appendTo('ol:first');
+            //$('ol:first').append('ol li:first');
+
+
+            // $('ol li:last').prependTo('ol:first');
+            // $('ol:first').prepend($('ol li:last'));
+
+            //$('ol li:first').insertAfter('#e1');
+            //$('#e1').after($('ol li:first'));
+
+
+            var clon = $('ol li:first').clone();
+            //var nuevo_e = $('<p>Hola Mundo!</p>');
+
+            $('ol').append(clon);
+
+
+
+
+
+
+
+
+
+        });
+
+    });
+</script>
+</body>
+</html>
