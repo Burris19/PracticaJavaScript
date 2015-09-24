@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+
+    <div>
+        <article id="padre">
+                Hey!! :D
+                <div id="test">
+                    Soy el hijo
+                </div>
+                <di id="hola">Soy el segundo hijo</di>
+        </article>
+
+        <ul>
+            <li id="primero">soy el primero</li>
+            <li>Soy el que sigue</li>
+            <li>Soy el tercero</li>
+        </ul>
+    </div>
+
+<script src="jquery-1.11.3.min.js"></script>
+<script>
+    $(function(){
+
+        //$('#primero').next().text();
+        //$('#test').parent().text();
+        //$('#padre').children().attr('id')
+        //$('#primero').siblings();
+
+        $('ul li').each(function(indice,elemento){
+            console.log("Este elemento numero: " + indice + " contiene este texto: " + $(elemento).text() );
+        });
+
+
+    });
+</script>
+</body>
+</html>
