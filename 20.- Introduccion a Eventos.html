@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <a href="http://codigofacilito.com/" id="evento">Hola</a>
+    <a href="http://codigofacilito.com/" id="evento2">Hola dos </a>
+<script src="jquery-1.11.3.min.js"></script>
+<script>
+    $(function(){
+        $('a').on('click', function (e) {
+            e.preventDefault();
+            console.log($(this).attr('id'));
+
+        });
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <ul>
+        <li>Uno</li>
+        <li>Dos</li>
+        <li>Tres</li>
+    </ul>
+
+
+
+<script src="jquery-1.11.3.min.js"></script>
+<script>
+    $(function(){
+        $('ul li').each(function(indice,elemento){
+            $.data(elemento,'posicion',indice);
+        });
+
+        $('ul li').each(function(index,elemento){
+            console.log($.data(elemento,'posicion'));
+        });
+    });
+</script>
+</body>
+</html>

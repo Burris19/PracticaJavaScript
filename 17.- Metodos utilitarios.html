@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        body,html
+        {
+            background: #000;
+            color: #000;
+            font-weight: bold;
+            margin: 0;
+            padding: 0;
+        }
+        header
+        {
+            display: block;
+            margin: 0 auto 50px auto;
+            width: 365px;
+        }
+        button
+        {
+            display: block;
+            margin: 0 auto;
+            width: 80px;
+        }
+        div
+        {
+            background: #fff;
+            height: 50px;
+            display: block;
+            width: 400px;
+            margin: 2px auto;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="codigofacilito.png" alt="CF"/>
+    </header>
+
+    <button id="test">Ejecutar</button>
+
+    <div id="e1">Metodos utilitarios</div>
+
+<script src="jquery-1.11.3.min.js"></script>
+<script>
+    $(function(){
+        $('button').on('click',function(){
+            var arreglo = ['Dxvtuts','codigoFacilito','Roofdier Dz'];
+
+            var cadena = '                      hol                  a              mun       do       ';
+            console.log(cadena);
+            console.log($.trim(cadena));
+
+
+            /*
+            var respuesta = $.inArray('Dxvtuts',arreglo);
+            if( respuesta !== -1 )
+                console.log(arreglo[respuesta]);
+            */
+            /*
+            $.each(arreglo, function(indice,elemento){
+                if(arreglo[indice] == 'Roofdier Dz')
+                    return true;
+
+                console.log('Elemento: ' + indice + ' contiene : ' + elemento);
+            });
+            */
+        });
+    });
+</script>
+</body>
+</html>
