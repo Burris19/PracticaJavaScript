@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <input type="checkbox" id="miInput" checked = 'checked'/>
+    <button class="cambiar" id="boton1">Apagar</button>
+    <button class="cambiar" id="boton2">Apagar</button>
+
+
+
+<script src="jquery-1.11.3.min.js"></script>
+<script>
+    $(function(){
+
+        $('#miInput').on('cambio',function(ev,id){
+            console.log(id);
+            if(this.checked)
+            {
+                $(this).removeAttr('checked');
+                $('.cambiar').text('Encender');
+            }
+            else{
+                $(this).attr('checked','checked');
+                $('.cambiar').text('Apagado');
+            }
+        });
+
+        $('.cambiar').on('click',function(){
+            $("#miInput").trigger('cambio',[$(this).attr('id')]);
+        })
+    });
+</script>
+</body>
+</html>
